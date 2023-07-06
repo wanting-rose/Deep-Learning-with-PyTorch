@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 X_numpy, Y_numpy = datasets.make_regression(n_samples=100, n_features=1, noise=20, random_state=1)
 X = torch.from_numpy(X_numpy.astype(np.float32))
 Y = torch.from_numpy(Y_numpy.astype(np.float32))
-Y = Y.view(Y.shape[0],1)
+Y = Y.view(Y.shape[0], 1)
 
 n_samples, n_features = X.shape
 # model
